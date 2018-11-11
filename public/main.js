@@ -3,7 +3,8 @@ const isDev = require('electron-is-dev')
 const path = require('path')
 const {
   default: installExtension,
-  REACT_DEVELOPER_TOOLS
+  REACT_DEVELOPER_TOOLS,
+  REDUX_DEVTOOLS
 } = require('electron-devtools-installer')
 
 let mainWindow
@@ -19,6 +20,7 @@ function createWindow() {
 
   if (isDev) {
     installExtension(REACT_DEVELOPER_TOOLS)
+      .then(installExtension(REDUX_DEVTOOLS)) // Delete if not using Redux
       .then(name => {
         console.log(`Added extension ${name}.`)
         mainWindow.loadURL(`http://localhost:1234/`)
