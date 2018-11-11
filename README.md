@@ -6,7 +6,7 @@ Easy to use React + Electron boilerplate
 ```bash
 git clone https://github.com/MonkeyAndres/reactron-boilerplate.git my-app
 cd my-app
-npm run dev
+npm install && npm run dev
 ```
 
 ## Documentation
