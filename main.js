@@ -13,7 +13,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    icon: path.join(__dirname, '../assets/icons/main.ico')
+    icon: path.join(__dirname, './assets/icons/main.ico')
   })
 
   console.log('Electron running...')
@@ -27,7 +27,7 @@ function createWindow() {
       })
       .catch(console.log)
   } else {
-    mainWindow.loadFile(path.join(__dirname, '../dist/index.html'))
+    mainWindow.loadFile(path.join(__dirname, './dist/index.html'))
   }
 
   mainWindow.webContents.openDevTools()
