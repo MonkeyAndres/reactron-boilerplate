@@ -1,18 +1,21 @@
 {
   "name": "reactron-boilerplate",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "public/main.js",
+  "main": "main.js",
   "productName": "Reactron",
   "scripts": {
+    "start": "npm run build && ELECTRON_IS_DEV=0 electron .",
     "dev": "concurrently \"parcel public/index.html\" \"wait-on http://localhost:1234/ && electron .\"",
-    "package": "parcel build public/index.html --public-url ./ && electron-packager .",
-    "package-mac": "parcel build public/index.html --public-url ./ && electron-packager . --platform=darwin",
-    "package-win": "parcel build public/index.html --public-url ./ && electron-packager . --platform=win32",
-    "package-linux": "parcel build public/index.html --public-url ./ && electron-packager . --platform=linux"
+    "prebuild": "rm -rf build",
+    "build": "npm run prebuild && parcel build public/index.html --public-url ./ -d build",
+    "package": "npm run build && electron-packager .",
+    "package-mac": "npm run build && electron-packager . --platform=darwin",
+    "package-win": "npm run build && electron-packager . --platform=win32",
+    "package-linux": "npm run build && electron-packager . --platform=linux"
   },
   "keywords": [],
-  "author": "",
+  "author": "@monkeyandres",
   "license": "ISC",
   "dependencies": {
     "app": "^0.1.0",
