@@ -8,14 +8,14 @@
     "build": "npm run prebuild && parcel build public/index.html --public-url ./  -d build",
     "dev": "concurrently \"parcel public/index.html\" \"wait-on http://localhost:1234/ && electron .\"",
     "format": "prettier-standard 'src/**/*.js'",
-    "prebuild": "rm -rf build",
+    "lint": "eslint src/**/*.js",
     "package": "npm run build && electron-builder --dir",
     "package:all": "npm run build && electron-builder -mwl",
     "package:mac": "npm run build && electron-builder --mac",
     "package:win": "npm run build && electron-builder --win nsis msi",
     "package:linux": "npm run build && electron-builder --linux AppImage deb rpm",
-    "start": "npm run build && ELECTRON_IS_DEV=0 electron .",
-    "lint": "eslint src/**/*.js"
+    "prebuild": "rm -rf build",
+    "start": "npm run build && ELECTRON_IS_DEV=0 electron ."
   },
   "keywords": [
     "electron",
