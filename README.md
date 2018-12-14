@@ -1,5 +1,5 @@
 # Reactron-Boilerplate
-Easy to use React + Electron boilerplate
+Minimal Electron Boilerplate with Parcel and React. 🎩
 
 ## Usage
 
