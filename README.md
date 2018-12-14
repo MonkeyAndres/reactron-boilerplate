@@ -32,3 +32,4 @@ npm install && npm start
 - React + Redux dev tools
 - Parcel support ([read more](https://parceljs.org/))
 - Package your app thanks to electron-builder
+- ESLint support
