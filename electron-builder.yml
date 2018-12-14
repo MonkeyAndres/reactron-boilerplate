@@ -1,0 +1,5 @@
+appId: com.monkeyandres.reactron
+copyright: 'Copyright © 2019 MonkeyAndres'
+productName: Reactron
+files: ['main.js', 'build/*', 'assets/*']
+compression: maximum
