@@ -1,5 +1,28 @@
 appId: com.monkeyandres.reactron
 copyright: 'Copyright © 2019 MonkeyAndres'
 productName: Reactron
-files: ['main.js', 'build/*', 'assets/*']
+files:
+  - main.js
+  - build/*
+  - assets/*
 compression: maximum
+mac:
+  icon: assets/icons/icon.icns
+dmg:
+  contents:
+    - x: 110
+      y: 150
+    - x: 240
+      y: 150
+      type: link
+      path: '/Applications'
+linux:
+  target:
+    - AppImage
+    - deb
+    - rpm
+  category: Development
+  icon: assets/icons/512x512
+win:
+  target: squirrel
+  icon: assets/icons/icon.ico
