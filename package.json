@@ -1,7 +1,7 @@
 {
   "name": "reactron-boilerplate",
   "version": "0.1.0",
-  "description": "",
+  "description": "Minimal Electron Boilerplate with Parcel and React.",
   "main": "main.js",
   "productName": "Reactron",
   "scripts": {
@@ -16,9 +16,13 @@
     "package:linux": "npm run build && electron-builder --linux AppImage deb rpm",
     "start": "npm run build && ELECTRON_IS_DEV=0 electron ."
   },
-  "keywords": [],
+  "keywords": [
+    "electron",
+    "parcel",
+    "react"
+  ],
   "author": "@monkeyandres",
-  "license": "ISC",
+  "license": "GNU3",
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
