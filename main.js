@@ -27,7 +27,7 @@ function createWindow() {
       })
       .catch(console.log)
   } else {
-    mainWindow.loadFile(path.join(__dirname, './dist/index.html'))
+    mainWindow.loadFile(path.join(__dirname, './build/index.html'))
   }
 
   mainWindow.webContents.openDevTools()
