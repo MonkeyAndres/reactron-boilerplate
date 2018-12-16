@@ -12,25 +12,25 @@ npm install && npm start
 
 ## Features
 
-* Create executables for all platforms (win, mac, linux)
-* React + Redux dev tools support
-* Parcel support ([read more](https://parceljs.org/))
-* ESLint support
-* Supports frontend routing with react-router (example included)
+- Create executables for all platforms (win, mac, linux)
+- React + Redux dev tools support
+- Parcel support ([read more](https://parceljs.org/))
+- ESLint support
+- Supports frontend routing with react-router (example included)
 
 ## Documentation
 
 ### Where do I put the code?
 
-First of all the boilerplate comes with a simple React app with React Router. You should put all your React code inside `src` the entry file for electron is `src/index.js`.
+First of all the boilerplate comes with a simple React app with React Router. You should put all your React code inside `src` all the electron configuration is placed in `main.js`.
 
 ### Icons
 
 The icons folder is located in `assets/icons`. Theres 3 icons:
 
-* icon.icns (mac os icon)
-* icon.ico (windows icon)
-* 512x512 (linux icon)
+- icon.icns (mac os icon)
+- icon.ico (windows icon)
+- 512x512 (linux icon)
 
 Read more about icons here: https://www.electron.build/icons
 
